@@ -1,0 +1,75 @@
+body {
+  background-color: white;
+}
+
+#so-logotype {
+  width: calc(32px + 16vw);
+  height: calc(18px + 9vw);
+  object-fit: cover;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-bar {
+  width: 100vw;
+  position: fixed;
+  margin: none;
+  top: 0;
+  background-color: white;
+  border-color: #080808;
+  border-bottom: 3px solid #a8a8a8;
+  font-family: Montserrat, Futura;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.nav-bar-item {
+  display: inline-block;
+  padding: 0 5vw 0 5vw;
+  vertical-align: middle;
+}
+
+.nav-bar-item:hover {
+  color: goldenrod;
+}
+
+.dropdown-item {
+  display: block;
+  padding: inherit;
+}
+
+.dropdown-item:hover {
+  color: goldenrod;
+}
+
+a {
+  color: gold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: goldenrod;
+}
+
+#nav-pages {
+  float: right;
+  padding-right: 25px;
+  margin-top: 30px;
+}
