@@ -2,10 +2,36 @@ body {
   background-color: white;
 }
 
+/* Nav Bar */
+
 #so-logotype {
-  width: calc(32px + 16vw);
-  height: calc(18px + 9vw);
-  object-fit: cover;
+  width: calc(64px + 8vw);
+  height: calc(46px + 4.5vw);
+  object-fit:scale-down;
+}
+
+.nav-bar {
+  width: 100vw;
+  position: relative;
+  margin: none;
+  top: 0;
+  background-color: white;
+  border-color: #080808;
+  border-bottom: 3px solid #8fc39b;
+  font-family: Montserrat, Futura;
+  font-size: 16px;
+  font-weight: 100;
+  justify-content: center;
+}
+
+.nav-bar-item {
+  display: inline-block;
+  padding: 0 5vw 0 5vw;
+  vertical-align: middle;
+}
+
+.nav-bar-item:hover {
+  color: #cfffda;
 }
 
 .dropdown {
@@ -27,49 +53,52 @@ body {
   display: block;
 }
 
-.nav-bar {
-  width: 100vw;
-  position: fixed;
-  margin: none;
-  top: 0;
-  background-color: white;
-  border-color: #080808;
-  border-bottom: 3px solid #a8a8a8;
-  font-family: Montserrat, Futura;
-  font-size: 16px;
-  font-weight: 100;
-}
-
-.nav-bar-item {
-  display: inline-block;
-  padding: 0 5vw 0 5vw;
-  vertical-align: middle;
-}
-
-.nav-bar-item:hover {
-  color: goldenrod;
-}
-
 .dropdown-item {
   display: block;
   padding: inherit;
 }
 
 .dropdown-item:hover {
-  color: goldenrod;
+  color: #cfffda;
 }
 
+/* Menu Icon and Animation */
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #8fc39b;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* Links */
+
 a {
-  color: gold;
+  color: #8fc39b;
   text-decoration: none;
 }
 
 a:hover {
-  color: goldenrod;
-}
-
-#nav-pages {
-  float: right;
-  padding-right: 25px;
-  margin-top: 30px;
+  color: #cfffda;
 }
