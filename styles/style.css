@@ -4,6 +4,10 @@ body {
 
 /* Nav Bar */
 
+header {
+  position: sticky;
+}
+
 #so-logotype {
   width: calc(64px + 8vw);
   height: calc(46px + 4.5vw);
@@ -104,4 +108,32 @@ a {
 
 a:hover {
   color: #cfffda;
+}
+
+/* Home Page Styles */
+
+#home-greeting {
+  width: 50vw;
+  font-family: Montserrat, Futura;
+  font-size: 75px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px auto;
+  position: static;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+  width: 50vw;
+  font-family: Montserrat, Futura;
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: none;
+  text-align: center;
+  margin: 2em auto;
+  position: static;
 }
