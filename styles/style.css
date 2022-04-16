@@ -121,10 +121,11 @@ a:hover {
 /* HOME PAGE STYLES */
 
 #home-greeting {
-  width: 50vw;
-  font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
+  width: 60vw;
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
   font-size: 75px;
-  font-weight: 200;
+  font-weight: 100;
+  color: #999999;
   text-transform: uppercase;
   text-align: center;
   margin: 50px auto;
@@ -132,13 +133,15 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
 }
 
 p {
   width: 50vw;
-  font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
   font-size: 16px;
+  font-weight: 300;
+  color: #606060;
   text-transform: none;
   text-align: center;
   margin: 2em auto;
