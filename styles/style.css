@@ -7,10 +7,12 @@ body {
 /* NAV BAR */
 
 header {
+  width: 80%;
+  margin: auto;
   position: sticky;
 }
 
-#so-logotype {
+.so-logotype {
   width: calc(64px + 8vw);
   height: calc(46px + 4.5vw);
   object-fit:scale-down;
@@ -22,8 +24,6 @@ header {
   margin: none;
   top: 0;
   background-color: white;
-  border-color: #080808;
-  border-bottom: 3px solid #8fc39b;
   font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
   font-size: 16px;
   font-weight: 100;
@@ -66,6 +66,12 @@ header {
 
 .dropdown-item:hover {
   color: #cfffda;
+}
+
+.nav-border {
+  width: 100vw;
+  height: 3px;
+  border-color: #8fc39b;
 }
 
 /* MENU ICON AND ANIMATION */
@@ -133,7 +139,6 @@ p {
   width: 50vw;
   font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
   font-size: 16px;
-  font-weight: 100;
   text-transform: none;
   text-align: center;
   margin: 2em auto;
@@ -142,6 +147,6 @@ p {
 
 /* FOOTER */
 
-#copyright-notice {
+.copyright-notice {
   font-size: 12px;
 }
