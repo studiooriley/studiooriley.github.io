@@ -138,6 +138,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  width: 50%;
+  margin: auto;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
 }
 
