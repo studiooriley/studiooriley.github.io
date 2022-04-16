@@ -13,9 +13,10 @@ header {
 }
 
 .so-logotype {
-  width: calc(64px + 8vw);
-  height: calc(46px + 4.5vw);
+  width: calc(96px + 8vw);
+  height: calc(69px + 4.5vw);
   object-fit:scale-down;
+  min-width: 64px;
 }
 
 .nav-bar {
@@ -72,6 +73,10 @@ header {
   width: 100vw;
   height: 3px;
   border-color: #8fc39b;
+}
+
+.menu-icon {
+  display: none;
 }
 
 /* MENU ICON AND ANIMATION */
@@ -157,5 +162,17 @@ p {
 @media screen and (max-width: 800px) {
   .site-page {
     display: none;
+    position: fixed;
+  }
+
+  .menu-icon {
+    top: 30px;
+    display: inline-block;
+    position: static;
+    margin-left: 20vw;
+  }
+
+  #home-greeting {
+    font-size: 50px;
   }
 }
