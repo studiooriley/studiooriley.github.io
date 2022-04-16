@@ -1,8 +1,10 @@
+/* BODY */
+
 body {
   background-color: white;
 }
 
-/* Nav Bar */
+/* NAV BAR */
 
 header {
   position: sticky;
@@ -66,7 +68,7 @@ header {
   color: #cfffda;
 }
 
-/* Menu Icon and Animation */
+/* MENU ICON AND ANIMATION */
 
 .container {
   display: inline-block;
@@ -96,7 +98,7 @@ header {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-/* Links */
+/* LINKS */
 
 a {
   color: #8fc39b;
@@ -110,7 +112,7 @@ a:hover {
   color: #cfffda;
 }
 
-/* Home Page Styles */
+/* HOME PAGE STYLES */
 
 #home-greeting {
   width: 50vw;
@@ -136,4 +138,10 @@ p {
   text-align: center;
   margin: 2em auto;
   position: static;
+}
+
+/* FOOTER */
+
+#copyright-notice {
+  font-size: 12px;
 }
