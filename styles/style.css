@@ -97,6 +97,9 @@ body {
 a {
   color: #8fc39b;
   text-decoration: none;
+  font-family: Montserrat, Futura;
+  font-size: 16px;
+  font-weight: 100; 
 }
 
 a:hover {
