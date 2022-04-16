@@ -24,7 +24,7 @@ header {
   background-color: white;
   border-color: #080808;
   border-bottom: 3px solid #8fc39b;
-  font-family: Montserrat, Futura;
+  font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
   font-size: 16px;
   font-weight: 100;
   justify-content: center;
@@ -116,7 +116,7 @@ a:hover {
 
 #home-greeting {
   width: 50vw;
-  font-family: Montserrat, Futura;
+  font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
   font-size: 75px;
   font-weight: 200;
   text-transform: uppercase;
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   width: 50vw;
-  font-family: Montserrat, Futura;
+  font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
   font-size: 16px;
   font-weight: 100;
   text-transform: none;
