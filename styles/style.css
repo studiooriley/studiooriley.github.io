@@ -51,7 +51,7 @@ header {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  padding: 10px 15px;
   z-index: 1;
 }
 
@@ -152,4 +152,10 @@ p {
 
 .copyright-notice {
   font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .site-page {
+    display: none;
+  }
 }
