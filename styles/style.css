@@ -129,7 +129,7 @@ a:hover {
 
 #home-greeting {
   width: 60vw;
-  max-width: 500px;
+  max-width: 400px;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
   font-size: 75px;
   font-weight: 100;
@@ -142,7 +142,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   width: 50vw;
-  max-width: 500px;
+  max-width: 400px;
   margin: 20px auto 10px auto;
   color: #5a5a5a;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   width: 50vw;
-  max-width: 500px;
+  max-width: 400px;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
   font-size: 16px;
   font-weight: 300;
@@ -164,7 +164,7 @@ p {
 
 ul {
   width: 25vw;
-  max-width: 500px;
+  max-width: 400px;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
   font-size: 16px;
   font-weight: 300;
@@ -201,7 +201,7 @@ footer {
   
 footer p {
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   display: inline-block;
   vertical-align: middle;
 }
