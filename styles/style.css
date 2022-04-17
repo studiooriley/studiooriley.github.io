@@ -130,7 +130,7 @@ a:hover {
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
   font-size: 75px;
   font-weight: 100;
-  color: #999999;
+  color: #5a5a5a;
   text-transform: uppercase;
   text-align: center;
   margin: 50px auto;
@@ -138,9 +138,11 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  width: 50%;
-  margin: auto;
+  width: 50vw;
+  margin: 20px auto 10px auto;
+  color: #5a5a5a;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  text-align: center;
 }
 
 p {
@@ -155,9 +157,52 @@ p {
   position: static;
 }
 
+ul {
+  width: 25vw;
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  color: #606060;
+  text-transform: none;
+  text-align: left;
+  margin: 0.5px auto;
+}
+
+button {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: #8fc39b;
+}
+
 /* FOOTER */
 
+footer {
+  background-color: #8fc39b;    
+  color: white;    
+  text-align: center;    
+  line-height: 100px;
+  height: 100px;    
+  width: 100vw;
+}
+  
+footer p {
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .copyright-notice {
+  display: block;
+  vertical-align: middle;
   font-size: 12px;
 }
 
