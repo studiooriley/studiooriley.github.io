@@ -117,12 +117,30 @@ a {
   color: #8fc39b;
   text-decoration: none;
   font-family: Montserrat, Futura;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 100; 
 }
 
 a:hover {
   color: #cfffda;
+}
+
+/* COLUMNS */
+
+.category-filter {
+  width: 200px;
+  height; 100px;
+  margin; auto;
+  text-align: center;
+  background-color: #606060;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
 }
 
 /* HOME PAGE STYLES */
@@ -153,7 +171,7 @@ p {
   width: 50vw;
   max-width: 400px;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #606060;
   text-transform: none;
@@ -166,7 +184,7 @@ ul {
   width: 25vw;
   max-width: 400px;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   color: #606060;
   text-transform: none;
@@ -179,7 +197,7 @@ button {
   max-width: 300px;
   margin: auto;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 200;
   padding: 10px 25px;
   border: none;
@@ -209,7 +227,7 @@ footer p {
 .copyright-notice {
   display: block;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* CONTACT PAGE STYLES */
@@ -236,39 +254,29 @@ footer p {
 
 /* BLOG PAGE STYLES */
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn { 
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
+.blog-card {
+  max-width: 50%;
+  background-color: none;
   padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
+  margin: auto;
   margin-top: 20px;
+  border: 3px solid #8fc39b;
+  border-radius: 15px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.blog-title {
+  font-size: 30px;
+  max-width: 80%;
+}
+
+.blog-description {
+  font-size: 12px;
+  max-width: 80%;
+}
+
+.blog-card-image {
+  background-color: none;
+  max-width: 90%;
 }
 
 /* Footer */
