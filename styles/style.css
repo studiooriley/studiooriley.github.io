@@ -210,7 +210,9 @@ button {
 
 footer {
   background-color: #8fc39b;    
-  color: white;    
+  color: white;  
+  display: block;
+  padding: 20px;  
   text-align: center;    
   line-height: 100px;
   height: 100px;    
@@ -282,14 +284,6 @@ footer p {
 
 .blog-excerpt {
   max-width: 90%;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
