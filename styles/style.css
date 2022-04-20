@@ -271,11 +271,16 @@ footer p {
 
 .blog-description {
   font-size: 12px;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .blog-card-image {
   background-color: none;
+  width: 90%;
+  margin: auto;
+}
+
+.blog-excerpt {
   max-width: 90%;
 }
 
