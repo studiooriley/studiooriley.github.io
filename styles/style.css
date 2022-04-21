@@ -214,18 +214,20 @@ button {
 footer {
   background: #8fc39b;
   position: absolute;
+  display: flex;
+  place-items: center;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 100px;
 }
 
-.copyright-notice {
-  color: white;
+footer .copyright-notice {
+  width: 100%;
   display: block;
+  color: white;
   font-size: 12px;
   font-weight: 400;
-  width: 33.3%;
   min-width: 240px;
 }
 
