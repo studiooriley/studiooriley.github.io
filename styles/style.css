@@ -1,15 +1,22 @@
-/* BODY */
+/* HTML & BODY */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   background-color: white;
+  margin: 0 0 150px;
 }
 
 /* NAV BAR */
 
 header {
-  width: 80%;
+  width: 100vw;
   margin: auto;
   position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .so-logotype {
@@ -21,11 +28,12 @@ header {
 }
 
 .nav-bar {
-  width: 75vw;
+  width: 100vw;
   position: relative;
   margin: auto;
   top: 0;
   background-color: white;
+  border-bottom: 3px solid #8fc39b;
   font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
   font-size: 16px;
   font-weight: 100;
@@ -68,11 +76,6 @@ header {
 
 .dropdown-item:hover {
   color: #cfffda;
-}
-
-.nav-border {
-  width: 100vw;
-  border: 1px solid #8fc39b;
 }
 
 .menu-icon {
@@ -209,14 +212,12 @@ button {
 /* FOOTER */
 
 footer {
-  background-color: #8fc39b;    
-  color: white;  
-  display: block;
-  padding: 20px;  
-  text-align: center;    
-  line-height: 100px;
-  height: 100px;    
-  width: 100vw;
+  background: #8fc39b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
 }
   
 footer p {
