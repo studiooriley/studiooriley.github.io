@@ -236,6 +236,7 @@ footer p {
 /* CONTACT PAGE STYLES */
 
 .contact-card {
+  background-color: aqua;
   display: block;
   width: 50vw;
   margin: auto;
@@ -257,8 +258,13 @@ footer p {
 
 /* BLOG PAGE STYLES */
 
+.blog {
+  display: block;
+}
+
 .blog-card {
   max-width: 50%;
+  min-width: 250px;
   background-color: none;
   padding: 20px;
   margin: auto;
@@ -280,7 +286,6 @@ footer p {
 .blog-card-image {
   background-color: none;
   width: 90%;
-  margin: auto;
 }
 
 .blog-excerpt {
