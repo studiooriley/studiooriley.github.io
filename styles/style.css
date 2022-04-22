@@ -161,12 +161,13 @@ a:hover {
   position: static;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, {
   width: 50vw;
   max-width: 400px;
   margin: 20px auto 10px auto;
   color: #5a5a5a;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  font-size: 16px;
   text-align: center;
 }
 
@@ -300,7 +301,7 @@ footer .copyright-notice {
 /* FAQ PAGE STYLES */
 
 .accordion {
-  width: 90%;
+  width: 50%;
   max-width: 800px;
   margin: 2rem auto;
 }
@@ -313,11 +314,18 @@ footer .copyright-notice {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
 }
 
+.accordion-item-body-content {
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  font-size: 16px;
+}
+
 .accordion-item-header {
-  padding: 0.5rem 3rem 0.5rem 1rem;
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  font-size: 16px;
+  font-weight: 200;
+  padding: 0.25rem 3rem 1rem 1rem;
   min-height: 3.5rem;
   line-height: 1.25rem;
-  font-weight: bold;
   display: flex;
   align-items: center;
   position: relative;
