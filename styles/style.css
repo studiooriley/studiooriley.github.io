@@ -333,14 +333,16 @@ footer .copyright-notice {
 }
 
 .accordion-item-header::after {
-  content: "\005E";
-  font-size: 2rem;
+  content: "\003d";
+  font-size: 3rem;
   position: absolute;
   right: 1rem;
 }
 
 .accordion-item-header.active::after {
   transform: rotate(-180deg);
+  content: "\2212";
+  font-size: 3rem;
 }
 
 .accordion-item-body {
