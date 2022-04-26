@@ -161,6 +161,16 @@ a:hover {
   position: static;
 }
 
+h1 {
+  width: 50vw;
+  margin: 20px auto 10px auto;
+  max-width: 400px;
+  color: #5a5a5a;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  text-align: center;
+}
+
 h2 {
   width: 50vw;
   margin: 20px auto 10px auto;
