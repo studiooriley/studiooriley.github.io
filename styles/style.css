@@ -142,14 +142,6 @@ a:hover {
   background-color: #606060;
 }
 
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
 /* HOME PAGE STYLES */
 
 #home-greeting {
@@ -399,5 +391,54 @@ footer .copyright-notice {
 @media(max-width: 767px) {
   html {
     font-size: 14px;
+  }
+}
+
+/* PORTFOLIO TEST CSS */
+/* PORTFOLIO TEST CSS */
+/* PORTFOLIO TEST CSS */
+
+.row {
+  background: darkblue;
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  background: black;
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
 }
