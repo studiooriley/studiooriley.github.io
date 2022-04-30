@@ -1,9 +1,5 @@
 /* HTML & BODY */
 
-* {
-  box-sizing: border-box;
-}
-
 html {
   position: relative;
   min-height: 100%;
@@ -162,7 +158,6 @@ a:hover {
 }
 
 h1 {
-  word-break: break-all;
   width: 50vw;
   margin: 20px auto 10px auto;
   max-width: 400px;
@@ -173,7 +168,6 @@ h1 {
 }
 
 h2 {
-  word-break: break-all;
   width: 50vw;
   margin: 20px auto 10px auto;
   max-width: 400px;
@@ -405,39 +399,21 @@ footer .copyright-notice {
 /* PORTFOLIO TEST CSS */
 
 .row {
-  width: 80%;
-  margin: auto;
+  background: darkblue;
+  margin: 8px -16px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
- padding: 8px;
+  padding: 8px;
 }
 
 /* Create four equal columns that floats next to each other */
 .column {
-  background: #ececec;
+  background: black;
   float: left;
-  width: 20%;
-  margin: 10px;
-  border-radius: 20px;
-}
-
-.portfolio-image {
-  border-radius: 10px;
-}
-
-.portfolio-header {
-  width: 100%;
-  margin: auto;
-}
-
-.portfolio-description {
-  width: 100%;
-  margin: 5px auto;
-  text-align: left;
-  font-size: 18px;
+  width: 25%;
 }
 
 /* Clear floats after rows */ 
@@ -448,20 +424,21 @@ footer .copyright-notice {
 }
 
 /* Content */
-.portfolio-content {
-  border-radius: 20px;
+.content {
+  background-color: white;
+  padding: 10px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
-    width: 45%;
+    width: 50%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    width: 90%;
+    width: 100%;
   }
 }
