@@ -260,42 +260,6 @@ footer .copyright-notice {
   margin: auto;
 }
 
-/* BLOG PAGE STYLES */
-
-.blog {
-  display: block;
-}
-
-.blog-card {
-  max-width: 50%;
-  min-width: 250px;
-  background-color: none;
-  padding: 20px;
-  margin: auto;
-  margin-top: 20px;
-  border: 3px solid #8fc39b;
-  border-radius: 15px;
-}
-
-.blog-title {
-  font-size: 30px;
-  max-width: 80%;
-}
-
-.blog-description {
-  font-size: 12px;
-  max-width: 90%;
-}
-
-.blog-card-image {
-  background-color: none;
-  width: 90%;
-}
-
-.blog-excerpt {
-  max-width: 90%;
-}
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn { 
@@ -410,7 +374,7 @@ footer .copyright-notice {
 
 /* Create four equal columns that floats next to each other */
 .column {
-  background: black;
+  border-radius: 15px;
   float: left;
   width: 25%;
 }
@@ -424,8 +388,25 @@ footer .copyright-notice {
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: #8fc39b;
   padding: 10px;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.blog-title {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+
+.blog-excerpt {
+  text-align: left;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
