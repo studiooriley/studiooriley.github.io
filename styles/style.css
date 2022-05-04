@@ -361,6 +361,7 @@ footer .copyright-notice {
   height: auto;
   display: flex;
   z-index: -2;
+  box-shadow: lightgrey 0.25rem 0.25rem 0.25rem;
 }
 
 .grid-item-1 {
