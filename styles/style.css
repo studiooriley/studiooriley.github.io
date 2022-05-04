@@ -114,10 +114,6 @@ header {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-/* HOME PAGE */
-
-
-
 /* LINKS */
 
 a {
@@ -130,16 +126,6 @@ a {
 
 a:hover {
   color: #cfffda;
-}
-
-/* COLUMNS */
-
-.category-filter {
-  width: 200px;
-  height: 100px;
-  margin: auto;
-  text-align: center;
-  background-color: #606060;
 }
 
 /* HOME PAGE STYLES */
@@ -279,7 +265,7 @@ footer .copyright-notice {
 .accordion-item {
   background-color: #fff;
   color: #5a5a5a;
-  margin: 1rem 0;
+  margin: auto;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
 }
@@ -291,10 +277,12 @@ footer .copyright-notice {
 
 .accordion-item-header {
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
   padding: 0.25rem 3rem 1rem 1rem;
-  min-height: 3.5rem;
+  min-width: 200px;
+  min-height: 2.5rem;
   line-height: 1.25rem;
   display: flex;
   align-items: center;
@@ -305,6 +293,7 @@ footer .copyright-notice {
 .accordion-item-header::after {
   content: "\003d";
   font-size: 3rem;
+  padding: 1rem;
   position: absolute;
   right: 1rem;
 }
@@ -319,7 +308,7 @@ footer .copyright-notice {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  }
+}
 
 .accordion-item-body-content {
   padding: 1rem;
@@ -358,18 +347,21 @@ footer .copyright-notice {
   }
 }
 
-/* PORTFOLIO TEST CSS */
-/* PORTFOLIO TEST CSS */
-/* PORTFOLIO TEST CSS */
+/* PORTFOLIO AND BLOG CSS */
+
+#blog-options {
+
+}
 
 .row {
-  margin: 8px -16px;
+  width: 100%;
+  margin: auto;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-  padding: 8px;
+  padding: 10px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -377,6 +369,7 @@ footer .copyright-notice {
   border-radius: 15px;
   float: left;
   width: 25%;
+  cursor: pointer;
 }
 
 /* Clear floats after rows */ 
@@ -388,36 +381,47 @@ footer .copyright-notice {
 
 /* Content */
 .content {
-  background-color: #8fc39b;
-  padding: 10px;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  padding: none;
   text-align: left;
   border-radius: 20px;
+  box-shadow: 0.2rem 0.4rem 0.2rem #606060;
 }
 
 .blog-image {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
 }
 
 .blog-title {
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
   text-align: left;
+  color: #8fc39b;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
 }
 
 .blog-excerpt {
+  width: 90%;
   text-align: left;
+  font-size: 1.5rem;
+  margin: none;
+  padding-bottom: 3rem;
+  padding-left: 0.5rem;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .column {
-    width: 50%;
+    width: 45%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .column {
     width: 100%;
   }
