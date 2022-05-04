@@ -347,82 +347,80 @@ footer .copyright-notice {
   }
 }
 
-/* PORTFOLIO AND BLOG CSS */
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-auto-rows: min-max(300px, auto);
+  grid-gap: 2%;
+  margin: 2rem;
+}
 
-#blog-options {
+.grid-item {
+  border-radius: 1rem;
+  height: auto;
+  display: flex;
+  z-index: -2;
+}
+
+.grid-item-1 {
 
 }
 
-.row {
-  width: 100%;
-  margin: auto;
+.grid-item-2 {
+
 }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 10px;
+.grid-item-3 {
+
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
-  border-radius: 15px;
-  float: left;
-  width: 25%;
-  cursor: pointer;
-}
+.grid-item-4 {
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  width: 100%;
-  background-color: rgb(246, 246, 246);
-  padding: none;
-  text-align: left;
-  border-radius: 20px;
-  box-shadow: 0.2rem 0.4rem 0.2rem #606060;
 }
 
 .blog-image {
-  width: 100%;
-  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .blog-title {
-  width: 90%;
-  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
   text-align: left;
-  color: #8fc39b;
-  font-size: 2rem;
-  padding-top: 1rem;
-  padding-left: 0.5rem;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  width: 20%;
+  position: absolute;
+  z-index: 0;
 }
 
 .blog-excerpt {
-  width: 90%;
+  font-size: 16px;
+  color: white;
   text-align: left;
-  font-size: 1.5rem;
-  margin: none;
-  padding-bottom: 3rem;
-  padding-left: 0.5rem;
+  width: 20%;
+  margin-top: 12rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  position: absolute;
+  z-index: 0;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 45%;
+@media screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-rows: 40% 40%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
-  .column {
-    width: 100%;
+  .grid-container {
+    grid-template-rows: 95%;
   }
 }
