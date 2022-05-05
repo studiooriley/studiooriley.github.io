@@ -19,24 +19,18 @@ accordionItemHeaders.forEach(accordionItemHeader => {
   });
 });
 
-// PORTFOLIO SCRIPTS
+// Contentful API
+var contentful = require('contentful');
 
-// Toggle grid padding
-function myFunction() {
-  var x = document.getElementById("myGrid");
-  if (x.className === "w3-row") {
-      x.className = "w3-row-padding";
-  } else {
-      x.className = x.className.replace("w3-row-padding", "w3-row");
-  }
-}
+var client = contentful.createClient({
+  space: '<izdjqwxzyzcv>',
+  accessToken: '<12jAfO_yvwGUFdfsNdRVK-XL3ylBGZdswtyhrgfnuw8>',
+});
 
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
-}
+client.getEntry('<18hcpQ5DjAG8JWCokGWqGU>').then(function (entry) {
+  // logs the entry metadata
+  console.log(entry.sys);
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+  // logs the field with ID title
+  console.log(entry.fields.productName);
+});

@@ -8,7 +8,7 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: white;
-  margin: 0 0 0 0;
+  margin: 0 0 150px;
 }
 
 /* NAV BAR */
@@ -49,7 +49,7 @@ header {
 
 .nav-bar-item {
   display: block;
-  top: 50px;
+  top: center;
   padding: 0 20px 0 20px;
   vertical-align: middle;
 }
@@ -347,7 +347,10 @@ footer .copyright-notice {
 /* MEDIA RULES */
 
 @media screen and (max-width: 800px) {
-
+  .site-page {
+    display: none;
+    position: fixed;
+  }
 
   .menu-icon {
     top: 30px;
