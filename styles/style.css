@@ -2,19 +2,22 @@
 
 html {
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
 }
 body {
+  position: relative;
+  min-height: 100vh;
   background-color: white;
-  margin: 0 0 150px;
+  margin: 0 0 0 0;
 }
 
 /* NAV BAR */
 
 header {
   width: 100vw;
-  margin: auto;
-  position: sticky;
+  display: block;
+  grid-template-columns: 50vw 50vw;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -28,20 +31,25 @@ header {
 }
 
 .nav-bar {
-  width: 100vw;
-  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16vw 16vw 16vw 16vw 16vw 16vw;
+  position: absolute;
   margin: auto;
   top: 0;
+  left: 0;
   background-color: white;
   border-bottom: 3px solid #8fc39b;
   font-family: "Playfair Display", Roboto, "Open Sans", Montserrat, Futura;
   font-size: 16px;
   font-weight: 100;
   justify-content: center;
+  z-index: 1;
 }
 
 .nav-bar-item {
-  display: inline-block;
+  display: block;
+  top: 50px;
   padding: 0 20px 0 20px;
   vertical-align: middle;
 }
@@ -142,6 +150,21 @@ a:hover {
   margin: 50px auto;
   position: static;
 }
+
+.hero-image-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100vw;
+  grid-auto-rows: min-max(300px, auto);
+  grid-gap: 2%;
+}
+
+.hero-image {
+  display: block;
+  z-index: 0;
+}
+
+/* SITE WIDE STYLES */
 
 h1 {
   width: 50vw;
@@ -324,10 +347,7 @@ footer .copyright-notice {
 /* MEDIA RULES */
 
 @media screen and (max-width: 800px) {
-  .site-page {
-    display: none;
-    position: fixed;
-  }
+
 
   .menu-icon {
     top: 30px;
