@@ -358,7 +358,6 @@ footer .copyright-notice {
 
 .grid-item {
   border-radius: 1rem;
-  height: auto;
   display: flex;
   z-index: -2;
   box-shadow: lightgrey 0.25rem 0.25rem 0.25rem;
@@ -380,7 +379,7 @@ footer .copyright-notice {
 
 }
 
-.blog-image {
+.blog-image, .portfolio-image {
   object-fit: cover;
   border-radius: 1rem;
   top: 0;
@@ -388,9 +387,9 @@ footer .copyright-notice {
   z-index: -1;
 }
 
-.blog-title {
+.blog-title, .portfolio-title {
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 800;
   color: white;
   text-align: left;
   margin-top: 10rem;
@@ -400,7 +399,7 @@ footer .copyright-notice {
   z-index: 0;
 }
 
-.blog-excerpt {
+.blog-excerpt, .portfolio-description {
   font-size: 16px;
   color: white;
   text-align: left;
