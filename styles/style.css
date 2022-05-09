@@ -229,7 +229,7 @@ button {
 
 footer {
   background: #8fc39b;
-  position: absolute;
+  position:fixeds;
   display: flex;
   place-items: center;
   left: 0;
@@ -368,6 +368,11 @@ footer .copyright-notice {
   html {
     font-size: 14px;
   }
+}
+
+#categories {
+  width: 100%;
+  margin: auto;
 }
 
 .grid-container {
