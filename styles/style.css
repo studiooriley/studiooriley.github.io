@@ -8,7 +8,6 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: white;
-  margin: 0 0 150px;
 }
 
 /* NAV BAR */
@@ -49,7 +48,7 @@ header {
 
 .nav-bar-item {
   display: block;
-  top: center;
+  top: 50px;
   padding: 0 20px 0 20px;
   vertical-align: middle;
 }
@@ -128,12 +127,12 @@ a {
   color: #8fc39b;
   text-decoration: none;
   font-family: Montserrat, Futura;
-  font-size: 20px;
-  font-weight: 100; 
+  font-size: 18px;
+  font-weight: 300; 
 }
 
 a:hover {
-  color: #cfffda;
+  color: #5a5a5a;
 }
 
 /* HOME PAGE STYLES */
@@ -190,7 +189,7 @@ p {
   width: 50vw;
   max-width: 500px;
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   color: #606060;
   text-transform: none;
@@ -229,13 +228,13 @@ button {
 
 footer {
   background: #8fc39b;
-  position:fixeds;
+  position: fixed;
   display: flex;
   place-items: center;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 50px;
 }
 
 footer .copyright-notice {
@@ -288,7 +287,10 @@ footer .copyright-notice {
 .accordion-item {
   background-color: #fff;
   color: #5a5a5a;
-  margin: auto;
+  margin: 2em auto;
+  height: auto;
+  min-width: 400px;
+  min-height: 2em;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
 }
@@ -302,29 +304,32 @@ footer .copyright-notice {
   font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
   font-size: 20px;
   font-weight: 300;
-  color: white;
-  padding: 0.25rem 3rem 1rem 1rem;
-  min-width: 200px;
+  color: #8fc39b;
+  padding: 0.25rem 3rem 2rem 1rem;
+  min-width: 300px;
   min-height: 2.5rem;
   line-height: 1.25rem;
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
+  top: 10px;
 }
 
 .accordion-item-header::after {
   content: "\003d";
+  top: 0px;
+  right: 20px;
   font-size: 3rem;
-  padding: 1rem;
+  display: inline-block;
   position: absolute;
-  right: 1rem;
 }
 
 .accordion-item-header.active::after {
   transform: rotate(-180deg);
   content: "\2212";
   font-size: 3rem;
+  top: 0px;
 }
 
 .accordion-item-body {
@@ -334,6 +339,10 @@ footer .copyright-notice {
 }
 
 .accordion-item-body-content {
+  font-family: "Helvetica Neue", Montserrat, Roboto, "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+  color: #5a5a5a;
   padding: 1rem;
   line-height: 1.5rem;
   border-top: 1px solid;
@@ -342,37 +351,6 @@ footer .copyright-notice {
 
 .accordion-item-header.active + .accordion-item-body {
   max-height: 500;
-}
-
-/* MEDIA RULES */
-
-@media screen and (max-width: 800px) {
-  .site-page {
-    display: none;
-    position: fixed;
-  }
-
-  .menu-icon {
-    top: 30px;
-    display: inline-block;
-    position: static;
-    margin-left: 20vw;
-  }
-
-  #home-greeting {
-    font-size: 50px;
-  }
-}
-
-@media(max-width: 767px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-#categories {
-  width: 100%;
-  margin: auto;
 }
 
 .grid-container {
@@ -440,7 +418,28 @@ footer .copyright-notice {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 700px) {
+
+@media(max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .site-page {
+    display: none;
+    position: fixed;
+  }
+
+  .menu-icon {
+    top: 30px;
+    display: inline-block;
+    position: static;
+    margin-left: 20vw;
+  }
+
+  #home-greeting {
+    font-size: 50px;
+  }
+
   .grid-container {
     grid-template-rows: 40% 40%;
   }
