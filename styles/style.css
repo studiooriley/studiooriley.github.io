@@ -28,6 +28,7 @@ header {
   width: calc(96px + 8vw);
   object-fit: scale-down;
   min-width: 100px;
+  max-width: 150px;
   z-index: 1;
 }
 
