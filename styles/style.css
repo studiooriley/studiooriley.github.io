@@ -15,24 +15,27 @@ body {
 header {
   width: 100vw;
   display: block;
-  grid-template-columns: 50vw 50vw;
+  grid-template-columns: 20vw 50vw;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .so-logotype {
-  margin: auto;
+  display: block;
+  position: relative;
+  margin: 15px auto 10px 30px;
   width: calc(96px + 8vw);
-  height: calc(69px + 4.5vw);
-  object-fit:scale-down;
-  min-width: 64px;
+  object-fit: scale-down;
+  min-width: 100px;
+  z-index: 1;
 }
 
 .nav-bar {
   width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 16vw 16vw 16vw 16vw 16vw 16vw;
+  grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw;
   position: absolute;
   margin: auto;
   top: 0;
@@ -43,18 +46,26 @@ header {
   font-size: 16px;
   font-weight: 100;
   justify-content: center;
-  z-index: 1;
+  float: right;
 }
 
 .nav-bar-item {
   display: block;
-  top: 50px;
-  padding: 0 20px 0 20px;
-  vertical-align: middle;
+  position: relative;
+  top: 40px;
+  z-index: 1;
 }
 
 .nav-bar-item:hover {
-  color: #cfffda;
+  color: #a4dfb2;
+  height: 100%;
+}
+
+.site-page {
+  top: calc(35px + 1vw);
+  display: block;
+  position: absolute;
+  margin-left: 20vw;
 }
 
 .dropdown {
@@ -65,15 +76,18 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 10px 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  position: relative;
+  margin: auto auto auto -20px;
+  padding: 10px;
+  border-radius: 0.1em 0.1em 0.5em 0.5em;
 }
 
 .dropdown-item {
@@ -82,13 +96,15 @@ header {
 }
 
 .dropdown-item:hover {
-  color: #cfffda;
+  color: #a4dfb2;
 }
 
 .menu-icon {
   width: 10%;
   margin: auto;
   display: none;
+  right: 20px;
+  z-index: 1;
 }
 
 /* MENU ICON AND ANIMATION */
@@ -132,7 +148,7 @@ a {
 }
 
 a:hover {
-  color: #5a5a5a;
+  color: #a4dfb2;
 }
 
 /* HOME PAGE STYLES */
@@ -147,7 +163,9 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   margin: 50px auto;
+  display: block;
   position: static;
+  z-index: 0;
 }
 
 .hero-image-container {
@@ -156,11 +174,12 @@ a:hover {
   grid-template-columns: 100vw;
   grid-auto-rows: min-max(300px, auto);
   grid-gap: 2%;
+  z-index: -1;
 }
 
 .hero-image {
   display: block;
-  z-index: 0;
+  margin-top: 80px;
 }
 
 /* SITE WIDE STYLES */
@@ -430,9 +449,9 @@ footer .copyright-notice {
   }
 
   .menu-icon {
-    top: 30px;
-    display: inline-block;
-    position: static;
+    top: calc(30px + 1vw);
+    display: block;
+    position: absolute;
     margin-left: 20vw;
   }
 
